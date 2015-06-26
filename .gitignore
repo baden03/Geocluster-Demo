@@ -2,3 +2,4 @@ build
 node_modules
 vendor
 .idea
+src/sites/d7-geocluster.dev/settings.local.php
