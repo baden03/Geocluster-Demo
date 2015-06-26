@@ -566,19 +566,4 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
-/**
- * Include an environment-specific settings file for db config, etc.
- */
-if (file_exists('settings.local.php')) {
-  include_once 'settings.local.php';
-} else {
-  die('shit');
-}
-
-//$databases['default']['default'] = array(
-//  'driver' => 'mysql',
-//  'database' => 'd7geocluster',
-//  'username' => 'epaul',
-//  'password' => 'd7geocluster',
-//  'host' => 'localhost',
-//);
+require_once "settings.local.php";
