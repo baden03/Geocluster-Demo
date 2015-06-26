@@ -1,5 +1,7 @@
 # Geocluster Demo for Drupal 7
 
+![alt tag](https://raw.githubusercontent.com/mpgeek/Geocluster-Demo/master/geocluster-demo-screen-cap.png)
+
 Minimal build spec for demoing the Leaflet-Geocluster stack in Drupal 7. This demo kit is built with [Grunt Drupal Tasks](https://github.com/phase2/grunt-drupal-tasks) via [Gadget](https://github.com/phase2/generator-gadget). Check the documentation at for Grunt Drupal Tasks (GDT) for more about the awesomeness of Drupal automation with Grunt.
 
 # Usage
