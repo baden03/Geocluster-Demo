@@ -27,18 +27,20 @@ After Node.js, you'll need the [`grunt-cli`](https://github.com/gruntjs/grunt-cl
 
 First clone the repo, and change in to the root of the project. Build the dependencies and the initial Drupal build:
 
+    $ git clone https://github.com/mpgeek/Geocluster-Demo.git PROJECT_ROOT
+    $ cd PROJECT_ROOT
     $ composer install
     $ npm install
     $ grunt drushmake
     
+Substitute whatever name you like for `PROJECT_ROOT`. We'll use it as a reference to the repo base directory in rest of the instructions.
+
 Next, you'll need an apache virtual host (or similar) and a database configured for the test content. For the purposes of this example, if you use `d7-gecluster.dev` as your virtual host domain, you can use the scaffolding as-is; point your virtual host to `build/html`. 
 
 Then [create a database](https://www.drupal.org/documentation/install/create-database) using your preferred method. Now make a copy of the example local settings file:
 
     $ cd PROJECT_ROOT/src/sites/d7geocluster.dev
     $ cp settings.local.example.php settings.local.php
-    
-Where `PROJECT_ROOT` is the path to the root of the project you cloned.
 
 Note that we used a site directory named after the virtual host domain. Substitute whatever you used in your environment for that directory name. Now edit that file and fill in your database parameters.
 
